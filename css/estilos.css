@@ -1,0 +1,106 @@
+.main img {
+    width: 100%;
+}
+
+.nav-link {
+    border-right: 1px solid rgb(0, 0, 0);
+}
+
+.last {
+    border-right: none;
+}
+
+.main {
+    padding: 20px;
+}
+
+.dados p {
+    text-align: justify;
+}
+
+.redes-sociais {
+    padding: 0 15px;
+}
+
+.redes a {
+    margin: 5px;
+}
+
+.projetos img {
+    width: 100%;
+}
+
+.projetos {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.projetos h3 {
+    padding-top: 10px;
+    width: 70%;
+    text-align: left;
+}
+
+.projetos h1 {
+    padding-bottom: 10px;
+}
+
+.experiencia h1 {
+    padding-bottom: 10px;
+}
+
+.img-experiencia img {
+    width: 50%;
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .dados p {
+        font-size: 0.7rem;
+    }
+    .dados h3 {
+        font-size: 25px;
+    }
+    .main {
+        padding: 30px;
+    }
+    .subtitulo {
+        font-size: 0.3rem;
+    }
+    .projetos {
+        padding-top: 30px;
+        padding-left: 10%;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dados p {
+        font-size: 0.6rem;
+    }
+    .dados h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .main {
+        padding: 20px;
+    }
+    .subtitulo {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .dados p {
+        font-size: 0.5rem;
+    }
+    .dados h3 {
+        font-size: 17px;
+        text-align: center;
+    }
+    .main {
+        padding: 10px;
+    }
+    .subtitulo {
+        font-size: 0.5rem;
+    }
+}
