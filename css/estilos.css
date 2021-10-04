@@ -27,7 +27,7 @@
 }
 
 .projetos img {
-    width: 100%;
+    width: 90%;
 }
 
 .projetos {
@@ -35,10 +35,73 @@
     padding-bottom: 30px;
 }
 
+.github {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: rgba(201, 196, 196, 0.685);
+}
+
+.footer {
+    background-size: cover;
+    background-position: 0px -250px;
+    background-color: rgba(201, 196, 196, 0.685);
+    padding: 20px;
+}
+
+.footer p {
+    text-align: center;
+}
+
+.footer img {
+    width: 5%;
+    display: inline;
+}
+
+.reps {
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+
+.repositorio {
+    padding-top: 20px;
+}
+
+.recomendacoes {
+    padding-top: 20px;
+}
+
+.recomendacoes h3 {
+    padding-top: 10px;
+    width: 70%;
+    text-align: left;
+}
+
+.recomendacoes h1 {
+    padding-bottom: 20px;
+}
+
+.github h3 {
+    padding-top: 10px;
+    width: 70%;
+    text-align: left;
+}
+
+.github h1 {
+    padding-bottom: 10px;
+}
+
 .projetos h3 {
     padding-top: 10px;
     width: 70%;
     text-align: left;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .projetos h1 {
@@ -50,12 +113,22 @@
 }
 
 .descricao {
-    padding-bottom: 20px;
-    border-bottom: 1px solid black;
+    padding-bottom: 40px;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 2px solid rgba(0, 0, 0, 0.281);
+}
+
+.botoes_carregar {
+    padding-right: 20px;
 }
 
 .experiencia {
-    padding-top: 30px;
+    padding-top: 10px;
     padding-bottom: 30px;
 }
 
@@ -99,7 +172,7 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 390px) {
     .dados p {
         font-size: 0.5rem;
     }
@@ -112,5 +185,14 @@
     }
     .subtitulo {
         font-size: 0.5rem;
+    }
+    .ytvideo {
+        width: 80%;
+    }
+    .bt_add {
+        display: none;
+    }
+    .search {
+        display: none;
     }
 }
