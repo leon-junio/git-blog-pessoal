@@ -42,14 +42,14 @@
     </nav>
 </header>
 
-<body>
+<body onload="init()">
     <main class="container main" id="perfil">
         <section class="row perfil">
-            <div class="col-lg-6 col-md-7 col-sm-12 justify-content-center text-center img-perfil">
+            <div id="img-perfil" class="col-lg-6 col-md-7 col-sm-12 justify-content-center text-center img-perfil">
                 <img src="img/perfil.png">
             </div>
             <div class="col-lg-6 col-md-5 col-sm-12">
-                <div class="col-lg-10 col-sm-12 justify-content-center text-left dados-perfil">
+                <div id="dados-perfil" class="col-lg-10 col-sm-12 justify-content-center text-left dados-perfil">
                     <article class="dados">
                         <h3>Leon Júnio Martins Ferreira</h3>
                         <p>Objetivos: Sou programador e desenvolvedor de aplicações e sites web. Com ensino técnico completo em informática pelo IFMG campus São João Evangelista sou capaz de projetar, desenvolver e criar soluções para problemas. Além de
@@ -71,6 +71,80 @@
                     </article>
                 </div>
             </div>
+            <div class="col-12">
+                <br>
+            </div>
+            <div class="col-12" style="background-color: rgba(201, 196, 196, 0.685);">
+                <hr>
+            </div>
+            <div id="img-git" class="col-lg-6 col-md-7 col-sm-12 justify-content-center text-center img-perfil" style="background-color: rgba(201, 196, 196, 0.685);">
+                <h1>GitHub Perfil</h1>
+                <img src="" style="background-color: rgb(255, 255, 255); width: 70%;height: auto;border:1px solid rgba(201, 196, 196, 0.685);border-radius: 70%;">
+            </div>
+            <div class="col-lg-6 col-md-5 col-sm-12" style="background-color: rgba(201, 196, 196, 0.685);">
+                <div id="dados-git" class="col-lg-10 col-sm-12 justify-content-center text-left dados-perfil">
+                    <article class="dados">
+                        <h3></h3>
+                        <p> </p>
+                        <p><i class="fas fa-users"></i> Seguidores:</p>
+                        <p><i class="fas fa-user-plus"></i> Seguindo:</p>
+                        <p id="repos-git"><i class="fas fa-folder"></i> Repositórios:</p>
+                        <p><i class="fas fa-building"></i> Empresa:</p>
+                        <p><i class="fas fa-globe"></i></i> Site:</p>
+                    </article>
+                </div>
+            </div>
+            <div class="col-12" style="background-color: rgba(201, 196, 196, 0.685);">
+                <h4>Meus Repositórios Públicos:</h4>
+                <div class="row" id="folders-git">
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-body">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-body">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-body">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 justify-content-center text-center" style="margin-top: 10px;">
+                        <p>Acesse o meu perfil do GitHub e <a href="#" class="btn btn-outline-dark">veja mais!</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12" style="background-color: rgba(201, 196, 196, 0.685);">
+                <div class="col-12">
+                    <h4>Pesquisa de repositórios GitHub</h4>
+                    <div class="row">
+                        <div class="col-12 col-sm-12">
+                            <div class="input-group">
+                                <div class="form-outline col-xs-10 col-sm-10 col-10">
+                                    <input id="pesquisa" type="search" class="form-control" placeholder="Repositório, assunto ou tema" />
+                                </div>
+                                <button id="btnPesquisa" type="button" class="btn btn-primary  col-md-2 col-xs-2 col-sm-1 col-2">
+                                      <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <br>
+                    </div>
+                    <div class="row justify-content-center text-center" id="git-pesquisa">
+                        <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_l5qvxwtf.json" background="transparent" speed="1" style="width: 100%; height: 300px;" loop autoplay></lottie-player>
+                    </div>
+                </div>
+                <div class="col-12" style="background-color: rgba(201, 196, 196, 0.685);">
+                    <hr>
+                </div>
         </section>
         <section class="row projetos" id="projetos">
             <h1 class="col-12 col-md-6 col-sm-6 col-lg-9 titulos">Projetos</h1>
@@ -231,10 +305,13 @@
         </div>
 </footer>
 
-
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+<script src="js/script.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
 
 
 </html>
